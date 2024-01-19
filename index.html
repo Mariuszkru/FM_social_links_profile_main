@@ -17,6 +17,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
+      @font-face {
+        font-family: Inter;
+        src: url(assets/fonts/static/Inter-Regular.ttf);
+      }
+      @font-face {
+        font-family: InterBold;
+        src: url(assets/fonts/static/Inter-Bold.ttf);
+      }
+      @font-face {
+        font-family: InterSemiBold;
+        src: url(assets/fonts/static/Inter-SemiBold.ttf);
+      }
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -27,32 +39,70 @@
     </style>
   </head>
   <body
-    class="h-screen flex flex-wrap justify-center content-center bg-[hsl(0, 0%, 12%)]"
+    class="h-screen flex flex-col flex-wrap justify-center content-center bg-[#141414]"
   >
-    <div id="social-card" class="max-w-80">
+    <div
+      id="social-card"
+      class="flex flex-col flex-wrap items-center w-full max-w-80 bg-[#1f1f1f] p-8 rounded-xl"
+    >
       <img
         src="assets/images/avatar-jessica.jpeg"
         alt="avatar Jessica"
-        class="rounded-full"
+        class="rounded-full size-16 mb-5"
       />
-      <div>Jessica Randall</div>
-      <div>London, United Kingdom</div>
-      <div>"Front-end developer and avid reader."</div>
-      <ul>
-        <li>GitHub</li>
-        <li>Frontend</li>
-        <li>Mentor</li>
-        <li>LinkedIn</li>
-        <li>Twitter</li>
-        <li>Instagram</li>
+      <div>
+        <h1 class="text-xl font-[InterSemiBold] text-white">Jessica Randall</h1>
+      </div>
+      <div class="text-xs font-[InterSemiBold] text-[#c5f82a] mt-2">
+        London, United Kingdom
+      </div>
+      <div class="text-xs mt-5 mb-2 font-thin text-white">
+        "Front-end developer and avid reader."
+      </div>
+      <ul class="w-full">
+        <a href="#">
+          <li
+            class="mt-3 text-white p-3 text-xs font-[InterBold] text-center rounded-md bg-[#333333] hover:bg-[#c5f82a] hover:text-[#333333]"
+          >
+            GitHub
+          </li>
+        </a>
+        <a href="#">
+          <li
+            class="mt-3 text-white p-3 text-xs font-[InterBold] text-center rounded-md bg-[#333333] hover:bg-[#c5f82a] hover:text-[#333333]"
+          >
+            Frontend Mentor
+          </li>
+        </a>
+        <a href="#">
+          <li
+            class="mt-3 text-white p-3 text-xs font-[InterBold] text-center rounded-md bg-[#333333] hover:bg-[#c5f82a] hover:text-[#333333]"
+          >
+            LinkedIn
+          </li>
+        </a>
+        <a href="#">
+          <li
+            class="mt-3 text-white p-3 text-xs font-[InterBold] text-center rounded-md bg-[#333333] hover:bg-[#c5f82a] hover:text-[#333333]"
+          >
+            Twitter
+          </li>
+        </a>
+        <a href="#">
+          <li
+            class="mt-3 text-white p-3 text-xs font-[InterBold] text-center rounded-md bg-[#333333] hover:bg-[#c5f82a] hover:text-[#333333]"
+          >
+            Instagram
+          </li>
+        </a>
       </ul>
     </div>
 
-    <div class="attribution">
+    <div class="attribution pt-2 text-white">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://github.com/Mariuszkru">Mariuszkru</a>.
     </div>
   </body>
 </html>
